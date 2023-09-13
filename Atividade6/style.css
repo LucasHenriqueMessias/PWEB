@@ -1,0 +1,76 @@
+.box {
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+}
+
+.box h1::before {
+    content: "Amarelo";
+}
+
+
+/*
+    Media Screen passando por tamanho máximo que será para x cor
+    a div h1 em index.html é utilizado como campo para que a informação do nome da cor seja escrito
+    Media Screen representante à amarelo foi removida, para que seja definida como padrão (é o maior valor)
+    Com a cor amarela como padrão, não respeitaráo limite de 1920, irá de infinito à 1366px
+*/
+
+/* @media screen and (max-width: 1920px) {
+    .box {
+        background-color: yellow;
+    }
+
+    .box h1:before {
+        content: "Amarelo";
+    }
+} */
+@media screen and (max-width: 1366px) {
+    .box {
+        background-color: purple;
+    }
+
+    .box h1:before {
+        content: "Roxo";
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .box {
+        background-color: red;
+    }
+
+    .box h1:before {
+        content: "Vermelho";
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .box {
+        background-color: magenta;
+    }
+
+    .box h1:before {
+        content: "Rosa";
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        background-color: orange;
+    }
+
+    .box h1:before {
+        content: "Laranja";
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .box {
+        background-color: gray;
+    }
+
+    .box h1:before {
+        content: "Cinza";
+    }
+}
